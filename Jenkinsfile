@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        terraform 'terraform'
+        terraform 'Terraform'
 }
     environment {
         PATH=sh(script:"echo $PATH:/usr/local/bin", returnStdout:true).trim()
